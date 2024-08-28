@@ -1,0 +1,767 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #F4EEE0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    background: linear-gradient(to bottom, #291B25, #4F4557);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+html, body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+u {
+    font-size: 1.25rem;
+}
+
+
+
+/* Header Styles */
+header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #4F4557;
+}
+
+.logo {
+    width: 50vw;
+}
+
+.my-logo {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.nav-buttons {
+    width: 50vw;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+ul > a:hover {
+    border-bottom: 3px solid #F4EEE0;
+}
+
+.dropdown-button {
+    display: none;
+}
+
+/* Main Content Styles */
+body {
+    background: linear-gradient(to bottom, #291B25, #4F4557);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    width: 100vw;
+    margin-top: 15vh;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-side {
+    max-width: 500px;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.left-side > * {
+    margin: 75px 50px;
+}
+
+.line-between {
+    border: 1px solid #F4EEE0;
+}
+
+.right-side {
+    max-width: 500px;
+    margin-right: 150px;
+}
+
+.my-profile {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+/* Footer Styles */
+footer {
+    width: 100vw;
+    height: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+footer > a {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+/* Profile Page Styles */
+.profile-body {
+    background: linear-gradient(to bottom, #291B25, #4F4557);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-profile {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.profile-page {
+    width: 100vw;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.profile-left {
+    max-width: 500px;
+    margin-left: 100px;
+}
+
+.profile-right {
+    max-width: 750px;
+    margin-top: 90px;
+    margin-right: 100px;
+}
+
+.mid-profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.mid-top-title {
+    margin: 0 0 20px 50px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    box-sizing: border-box;
+    place-items: center;
+}
+
+.mid-container {
+    margin: 30px 0;
+    border: 1px solid #F4EEE0;
+    width: 30vw;
+    padding: 10px 0px;
+}
+
+.mid-container > .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content > h1 {
+    height: 100px;
+    width: 100px;
+}
+
+.exp-educ-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.exp-educ-title {
+    margin: 50px 0px 50px 50px;
+}
+
+.exp-content {
+    border: 1px solid #F4EEE0;
+    width: 30vw;
+    margin-left: 190px;
+    padding: 50px;
+    height: 450px;
+}
+
+.exp-content > p:first-child {
+    color: #FF6F61;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.exp-content > p:nth-child(2) {
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.exp-content > ul {
+    display: block;
+    margin-left: 50px;
+}
+
+.exp-content > ul > li {
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+
+.educ-content {
+    border: 1px solid #F4EEE0;
+    width: 30vw;
+    margin-left: 190px;
+    padding: 50px;
+    height: 450px;
+}
+
+.educ-content > p:first-child {
+    margin: 10px 0px;
+}
+
+.educ-content > p:nth-child(2), .educ-content > p:nth-child(7) {
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.educ-content > ul {
+    display: block;
+    margin-left: 50px;
+}
+
+.educ-content > ul > li {
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+
+/* Progress CSS */
+.languages {
+    margin: 50px 0px 50px 50px;
+}
+
+.languages-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+}
+
+.frontend{
+    border: 1px solid #F4EEE0;
+    width: 30vw;
+    margin-left: 190px;
+}
+
+.frontend > h4 {
+    padding: 10px 0px 0px 10px;
+}
+
+.frontend-list {
+    padding: 10px 100px 10px 100px;
+}
+
+.backend {
+    border: 1px solid #F4EEE0;
+    width: 30vw;
+    margin-left: 190px;
+}
+
+.backend > h4 {
+    padding: 10px 0px 0px 10px;
+}
+
+.backend-list {
+    padding: 10px 100px 10px 100px;
+}
+
+.progress {
+    width: 20vw;
+    border: 1px solid #F4EEE0;
+    margin: 20px 0px;
+}
+
+.progress > p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.progress-container {
+    width: 80%; /* Adjust as needed */
+    max-width: 600px; /* Maximum width for the progress bar container */
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure inner content does not overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+    margin: 10px auto; /* Center the progress bar horizontally */
+    border: 1px solid #F4EEE0;
+}
+
+.progress-bar {
+    height: 30px; /* Height of the progress bar */
+    background-color: #4F4557; /* Dark purple bar color */
+    width: 0%; /* Set the width of the progress bar to represent progress (70% in this example) */
+    text-align: center; /* Center text horizontally */
+    color: #FFFFFF; /* Text color */
+    line-height: 30px; /* Center text vertically */
+    font-weight: bold; /* Bold text */
+    border-radius: 8px 0 0 8px; /* Rounded corners on the left side */
+    transition: width 0.3s ease; /* Smooth transition effect if the width were to change */
+    position: relative; /* Ensure text is centered within the bar */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.progress:nth-child(1) > .progress-container >  .progress-bar {
+    width: 90%;
+}
+
+.progress:nth-child(2) > .progress-container >  .progress-bar {
+    width: 85%;
+}
+
+.progress:nth-child(3) > .progress-container >  .progress-bar {
+    width: 60%;
+}
+
+.progress:nth-child(4) > .progress-container >  .progress-bar {
+    width: 50%;
+}
+
+.back-prog:nth-child(1) > .progress-container >  .progress-bar {
+    width: 70%;
+}
+
+.back-prog:nth-child(2) > .progress-container >  .progress-bar {
+    width: 70%;
+}
+
+.back-prog:nth-child(3) > .progress-container >  .progress-bar {
+    width: 40%;
+}
+
+.back-prog:nth-child(4) > .progress-container >  .progress-bar {
+    width: 30%;
+}
+
+.back-prog:nth-child(5) > .progress-container >  .progress-bar {
+    width: 30%;
+}
+
+
+/* Contact CSS */
+.contact-body {
+    background: linear-gradient(to bottom, #291B25, #4F4557);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.contact-title {
+    margin: 0 0 20px 50px;
+}
+
+.main-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.mid-contact {
+    border: 1px solid #F4EEE0;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.mid-contact > * {
+    margin: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+        font-weight: normal;
+    }
+    
+    u {
+        font-size: 1rem;
+    }
+
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .dropdown-button {
+        /* position: absolute; */
+        display: inline-block;
+        right: 0;
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        color: #F4EEE0;
+        border: none;
+        font-size: 2rem;
+        font-weight: 800;
+        padding: 27px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #291B25;
+        min-width: 100vw;
+        z-index: 1;
+        right: 0;
+    }
+
+    .dropdown-content ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .dropdown-content ul a li {
+        color: #F4EEE0;
+        padding: 0px 10px 16px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        /* margin: 20px 0px; */
+    }
+
+    .show {
+        display: block;
+    }
+
+    main {
+        height: 100;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: auto auto; /* Two rows: one for each section */
+        place-items: center;
+        gap: 1rem; /* Optional, for spacing between the two sections */
+    }
+    
+    .left-side {
+        width: 100vw;
+        font-size: 1rem;
+        order: 2;
+        margin-left: -150px;
+    }
+    
+    .left-side > * {
+        margin: 30px 20px;
+    }
+    
+    .line-between {
+        display: none; /* Keeping this hidden as per your current design */
+    }
+    
+    .right-side {
+        margin-top: -100px;
+        width: 100vw;
+        order: 1;
+        display: grid;
+        place-items: center;
+    }
+
+    .my-profile {
+        width: 70vw;
+        height: auto;
+    }
+
+    footer {
+        width: 100vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: -25px;
+    }
+    
+    footer > a {
+        height: 50px;
+        width: 50px;
+    }
+
+    .profile-body {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .profile-page {
+        width: 100vw;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        place-items: center;
+    }
+
+    .profile-left {
+        width: 90vw;
+        display: grid;
+        place-items: center;
+        margin-left: 0px;
+    }
+    
+    .profile-right {
+        max-width: 90vw;
+        margin-top: 30px;
+        margin-right: 0px;
+    }
+
+    .mid-profile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100vw;
+    }
+    
+    .mid-top-title {
+        margin: 0 0 20px 20px;
+    }
+    
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100vw;
+        box-sizing: border-box;
+        place-items: center;
+    }
+    
+    .mid-container {
+        margin: 10px 0;
+        border: 1px solid #F4EEE0;
+        width: 90vw;
+        padding: 10px 0px;
+    }
+    
+    .mid-container > .content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content > h3 {
+        margin-top: -50px;
+    }
+    
+    .content > h1 {
+        height: 100px;
+        width: 100px;
+    }
+
+    .exp-educ-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+    }
+    
+    .exp-educ-title {
+        margin: 50px 0px 20px 20px;
+    }
+    
+    .exp-content {
+        border: 1px solid #F4EEE0;
+        width: 90vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        padding: 20px;
+        height: 350px;
+    }
+    
+    .exp-content > p:first-child {
+        color: #FF6F61;
+        font-weight: 600;
+        margin: 10px 0px;
+    }
+    
+    .exp-content > p:nth-child(2) {
+        font-weight: 700;
+        margin: 10px 0px;
+    }
+    
+    .exp-content > ul {
+        display: block;
+        margin-left: 50px;
+    }
+    
+    .exp-content > ul > li {
+        list-style-type: square;
+        margin-bottom: 10px;
+    }
+    
+    .educ-content {
+        border: 1px solid #F4EEE0;
+        width: 90vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        padding: 20px;
+        height: 450px;
+    }
+
+    .languages {
+        margin: 50px 0px 20px 20px;
+    }
+    
+    .languages-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100vw;
+    }
+    
+    .frontend{
+        border: 1px solid #F4EEE0;
+        width: 90vw;
+        transform: translateX(-50%);
+        margin: 20px 0px 20px 50%;
+    }
+    
+    .frontend > h4 {
+        padding: 10px 0px 0px 10px;
+    }
+    
+    .frontend-list {
+        padding: 10px 100px 10px 100px;
+    }
+    
+    .backend {
+        border: 1px solid #F4EEE0;
+        width: 90vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+    }
+    
+    .backend > h4 {
+        padding: 10px 0px 0px 10px;
+    }
+    
+    .backend-list {
+        padding: 10px 100px 10px 100px;
+    }
+    
+    .progress {
+        width: 80vw;
+        border: 1px solid #F4EEE0;
+        margin: 20px 0px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .contact-main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100vw;
+    }
+    
+    .contact-title {
+        margin: -100px 0px 0px -220px;
+    }
+    
+    .main-contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100vw;
+    }
+    
+    .mid-contact {
+        border: 1px solid #F4EEE0;
+        text-align: center;
+        width: 90vw;
+        margin: 10px 0px 10px 115px;
+        padding: 0px;
+    }
+
+    .mid-contact > * {
+        margin: 10px 0px;
+    }
+
+}
